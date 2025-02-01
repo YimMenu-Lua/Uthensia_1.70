@@ -354,9 +354,9 @@ MissionEdit:add_separator()
         1499100,
         1527300,
         1555800,
-        1584350,
-        1612950,
-        1641600,
+        1584350, 
+        1612950, 
+        1641600, 
         1670300,
         1699050,
         1727850,
@@ -8257,7 +8257,7 @@ MissionEdit:add_separator()
         1787576850,
     }
     
-    RankEditor = ranksmenu:add_tab("RANK EDITOR")
+    RankEditor = ranksmenu:add_tab("CUSTOM RANK EDITOR")
     
     RankEditor:add_text("SET YOUR RANK TO:")
     
@@ -8283,6 +8283,195 @@ MissionEdit:add_separator()
         end
     end)
     
+    OneLevel = ranksmenu:add_tab("ONE CLICK RANKS")
+
+    OneLevel:add_text("SET YOUR RANK TO:")
+    
+    OneLevel:add_button("LEVEL 1", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 1)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 1, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 10", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 24000)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 10, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 25", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 127100)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 25, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 31", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 188000)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 31, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 50", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 448800)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 50, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 69", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 806500)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 69, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 99", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 1555800)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 99, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 100", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 1584350)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 100, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 120 (UNLOCK MOST ITEMS)", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 2165850)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 120, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 200", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 4691850)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 200, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 300", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 8299350)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 300, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 400", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 12406850)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 400, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 500", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 17014350)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 500, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 600", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 22121850)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 600, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 619", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 23148800)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 619, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 666", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 25766700)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 666, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 700", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 27729350)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 700, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 800", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 33836850)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 800, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 900", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 40444350)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 900, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 1000", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 47551850)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 1000, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 3131", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 317869200)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 3131, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 6666", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 1267016700)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 6666, CHANGE SESSION TO APPLY."
+)
+    end)
+
+    OneLevel:add_button("LEVEL 8000", function()
+        stats.set_int(MPX() .. "CHAR_SET_RP_GIFT_ADMIN", 1787576850)
+        gui.show_message(
+			"RANK CHANGE",
+			"YOUR RANK IS SET TO 8000, CHANGE SESSION TO APPLY."
+)
+    end)
+
+
     CrewRankEditor = ranksmenu:add_tab("CREW RANK EDITOR")
 
 
@@ -11681,6 +11870,7 @@ MissionEdit:add_separator()
     KDS = INTRXDUCE:add_tab("K/D EDITOR")
 
     TypeKd = KDS:add_tab("CUSTOM K/D")
+    TypeKd:add_text("SET YOUR K/D TO:")
     
     KdValue = TypeKd:add_input_float("SET YOUR K/D")
     
@@ -11747,7 +11937,7 @@ MissionEdit:add_separator()
          end
     end)
 
-    KillDeathEdit = KDS:add_tab("KILLS/DEATHS EDITOR")
+    KillDeathEdit = KDS:add_tab("KILLS/DEATHS EDITOR")  
     
     KillValue = KillDeathEdit:add_input_int("SET YOUR KILLS")
     DeathValue = KillDeathEdit:add_input_int("SET YOUR DEATHS")
@@ -11767,6 +11957,8 @@ MissionEdit:add_separator()
 OneKd = KDS:add_tab("ONE CLICK K/Ds")
 
 PLUS = OneKd:add_tab("PLUS K/D")
+
+PLUS:add_text("SET YOUR K/D TO:")
 
     PLUS:add_button("FROZEN 1 K/D", function()
         stats.set_int("MPPLY_KILLS_PLAYERS", 100000000)
@@ -11915,6 +12107,8 @@ PLUS = OneKd:add_tab("PLUS K/D")
 -----------------------------------------------------------
 
 MINUS = OneKd:add_tab("MINUS K/D")
+
+MINUS:add_text("SET YOUR K/D TO:")
 
     MINUS:add_button("FROZEN -1 K/D", function()
         stats.set_int("MPPLY_KILLS_PLAYERS", -100000000)
@@ -12164,7 +12358,6 @@ local VehiclesMenu = VehiclesMenu:add_button("CLAIM CURRENT VEHICLE AS PV", func
         end
     end)
 end)
-
 
 
 ----------------------------------------------------------------------
