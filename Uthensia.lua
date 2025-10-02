@@ -17,6 +17,7 @@ HISLANDP = "heist_island_planning"
 
 gui.show_message("INTRXDUCE", "LOVES U ALL")
 gui.show_message("INTRXDUCE", "UTHENSIA MENU IS LOADED")
+gui.show_message("UPDATE", "CLAIMING AS PERSONAL VEHICLE IS NOW FIXED")
 
 log.warning("ENJOY MODDING !!")
 
@@ -11760,10 +11761,9 @@ MissionEdit:add_separator()
         local instance = setmetatable({}, TransactionManager);
     
         instance.Transactions = {
-            {label = "15 MILLION", hash = 0x176D9D54},
-            {label = "15 MILLION", hash = 0xA174F633},
             {label = "7 MILLION", hash = 0xED97AFC1},
             {label = "3.6 MILLION", hash = 0xB703ED29},
+            {label = "3 MILLION", hash = 0x176D9D54},
             {label = "2.5 MILLION", hash = 0x46521174},
             {label = "2.5 MILLION", hash = 0xDBF39508},
             {label = "2 MILLION", hash = 0x8107BB89},
@@ -12285,7 +12285,7 @@ local should_run_script = false
 
 -- It's actually possible to save blacklisted vehicles as PV, but doing so requires patching a lot of scripts, and once the patches are disabled, the game will instantly delete these vehicles anyway, so it's not worth it.
 local function IS_VEHICLE_VALID_FOR_PV(vehicle_hash)
-    return scr_function.call_script_function("freemode", 0x8D3BD, "bool", {
+    return scr_function.call_script_function("freemode", 0x8E34B, "bool", {
         { "int", vehicle_hash }
     })
 end
@@ -12330,7 +12330,7 @@ local function RUN_SCRIPT()
     end
 end
 
-script.register_looped("VEHICLE MENU", function()
+script.register_looped("Vehicle Reward", function()
     if not script.is_active("am_mp_vehicle_reward") then
         should_run_script = false
         return
@@ -12348,13 +12348,13 @@ local VehiclesMenu = VehiclesMenu:add_button("CLAIM CURRENT VEHICLE AS PV", func
                 if IS_VEHICLE_VALID_FOR_PV(ENTITY.GET_ENTITY_MODEL(self.get_veh())) then
                     should_run_script = true
                 else
-                    gui.show_error("VEHICLE MENU", "THIS VEHICLE CANNOT BE SAVED AS A PERSONAL VEHICLE.")
+                    gui.show_error("Vehicle Reward", "This vehicle cannot be saved as a personal vehicle.")
                 end
             else
-                gui.show_error("VEHICLE MENU", "PLEASE GET IN A VEHICLE.")
+                gui.show_error("Vehicle Reward", "Please get in a vehicle.")
             end
         else
-            gui.show_error("VEHICLE MENU", "CANNOT GIVE VEHICLE AT THE MOMENT.")
+            gui.show_error("Vehicle Reward", "Cannot give vehicle at the moment. Are you online?")
         end
     end)
 end)
@@ -12368,9 +12368,9 @@ ilovecredits = INTRXDUCE:add_tab("C R E D I T S")
     INTRXDUCEi:add_text("UTHENSIA MENU DEVELOPER")
     INTRXDUCEi:add_text("INSTAGRAM:")
     INTRXDUCEi:add_text("https://www.instagram.com/intrxduce.gta/")
-
+    
     Shoxii = ilovecredits:add_tab("Shoxii_")
-    Shoxii:add_text("MY BEST FRIEND AND ALSO THE FIRST PERSON TO TEST UTHENSIA")
+    Shoxii:add_text("FIRST PERSON TO TEST UTHENSIA")
     Shoxii:add_text("DISCORD: shoxii.")
 
 ThanksMate = ilovecredits:add_tab("SPECIAL THANKS TO:")
@@ -12378,8 +12378,3 @@ yagz2jz = ThanksMate:add_tab("Yagz2jz")
              yagz2jz:add_text("HELPED ME A LOT WITH THE MENU AND GAVE ME SO MANY IDEAS.")
              yagz2jz:add_text("INSTAGRAM:")
              yagz2jz:add_text("https://www.instagram.com/yagz2jz/")
-
-titsou = ThanksMate:add_tab("Titsou")
-         titsou:add_text("HELPED ME ABOUT CODES AND GAVE ME MOTIVATION.")
-         titsou:add_text("WEBSITE:")
-         titsou:add_text("https://titsous.itch.io")
