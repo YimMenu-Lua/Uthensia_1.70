@@ -1,3 +1,16 @@
+--[[
+======================================================================
+PROJECT: Uthensia (YimMenu-Lua Recovery Script)
+DEVELOPER: 3it7 (https://github.com/3it7)
+ORGANIZATION: YimMenu-Lua (https://github.com/YimMenu-Lua)
+LANGUAGE: Lua
+LICENSE: Open Source
+======================================================================
+This file is part of the Uthensia project, developed and maintained
+exclusively by 3it7. All rights reserved to the original author.
+======================================================================
+]]
+
 local function MPX()
 	local ONLINE = stats.get_int("MPPLY_LAST_MP_CHAR")
 	if ONLINE == 0 then
