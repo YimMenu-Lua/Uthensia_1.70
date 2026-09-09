@@ -1,6 +1,6 @@
 ## 👤 Developer & Maintainer
 * **Lead Developer:** **3it7**
-* **Official Profile:** [://github.com](https://://github.com/3it7)
+* **Official Profile:** [3it7](https://://github.com/3it7)
 * **Organization:** [YimMenu-Lua](https://github.com/YimMenu-Lua)
 
 ## 🛠️ Installation & Usage
