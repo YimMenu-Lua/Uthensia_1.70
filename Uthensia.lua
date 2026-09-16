@@ -12377,10 +12377,10 @@ end)
 
 ilovecredits = INTRXDUCE:add_tab("C R E D I T S")
 
-    INTRXDUCEi = ilovecredits:add_tab("INTRXDUCE")
+    INTRXDUCEi = ilovecredits:add_tab("3it7 aka INTRXUDE")
     INTRXDUCEi:add_text("UTHENSIA MENU DEVELOPER")
     INTRXDUCEi:add_text("INSTAGRAM:")
-    INTRXDUCEi:add_text("https://www.instagram.com/intrxduce.gta/")
+    INTRXDUCEi:add_text("https://www.instagram.com/x3it7/")
     
     Shoxii = ilovecredits:add_tab("Shoxii_")
     Shoxii:add_text("FIRST PERSON TO TEST UTHENSIA")
